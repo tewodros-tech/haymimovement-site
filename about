@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Hayimi Movement</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Hayimi Movement</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="donate-btn">DONATE</button>
+  </nav>
+
+  <!-- About Content -->
+  <main class="page-content">
+    <h1>About Hayimi Movement</h1>
+    <p>Hayimi Movement is a grassroots initiative focused on empowering communities through education, health, and sustainable development. We believe in local leadership, cultural preservation, and inclusive growth.</p>
+    <p>Founded in Ethiopia, our programs span urban and rural regions, with a special focus on women and youth empowerment.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hayimi Movement. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
