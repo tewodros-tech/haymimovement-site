@@ -4,15 +4,16 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background-color: var(--primary);
-  color: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  background-color: var(--primary, #0077b6); /* fallback color */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: inherit;
+  outline: none;
 }
 
-button:hover {
-  background-color: var(--accent);
+button:hover,
+button:focus {
+  background-color: var(--accent, #00b4d8); /* fallback accent */
   transform: scale(1.05);
 }
-
-
