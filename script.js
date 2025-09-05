@@ -28,21 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Language toggle function
-function setLanguage(lang) {
-  const content = {
-    en: {
-      headline: "We’re changing the world.",
-      subtext: "No matter the industry, we’re breaking down barriers that hold women back.",
-      mission: "Haymimovement.org is ready to keep girls learning during and after the crisis."
-    },
-    am: {
-      headline: "እኛ ዓለምን እንቀየራለን።",
-      subtext: "በማንኛውም ኢንዱስትሪ ውስጥ ሴቶችን የሚያወርዱ እንቅስቃሴዎችን እንደመለስን።",
-      mission: "Haymimovement.org በአሁኑና በኋላ ወቅት ልጆችን እንዲቀጥሉ ተዘጋጅቷል።"
-    }
-  };
 
-  const selected = content[lang] || content.en;
-
-  const hero
