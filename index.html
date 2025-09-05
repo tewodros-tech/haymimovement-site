@@ -7,33 +7,37 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Language Toggle -->
   <div class="language-toggle">
     <button onclick="setLanguage('en')">English</button>
     <button onclick="setLanguage('am')">አማርኛ</button>
   </div>
 
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="logo">Haymimovement.org</div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Pages</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="pages.html">Pages</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
     <button class="donate-btn">DONATE</button>
   </nav>
+
+  <!-- Carousel Section -->
   <section class="carousel">
-  <div class="carousel-container">
-    <img src="images/photo1.jpg" class="carousel-image active" alt="Slide 1" />
-    <img src="images/photo2.jpg" class="carousel-image" alt="Slide 2" />
-    <img src="images/photo3.jpg" class="carousel-image" alt="Slide 3" />
-  </div>
-</section>
+    <div class="carousel-container">
+      <img src="images/photo1.jpg" class="carousel-image active" alt="Slide 1" />
+      <img src="images/photo2.jpg" class="carousel-image" alt="Slide 2" />
+      <img src="images/photo3.jpg" class="carousel-image" alt="Slide 3" />
+    </div>
+  </section>
 
-
+  <!-- Hero Section -->
   <header class="hero">
-    <div class="hero-text">
+    <div class="hero-text" id="hero-text">
       <h1>We’re changing the world.</h1>
       <p>No matter the industry, we’re breaking down barriers that hold women back.</p>
       <button class="cta-btn">JOIN TODAY</button>
@@ -51,6 +55,7 @@
     </div>
   </header>
 
+  <!-- Gallery Section -->
   <section class="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
@@ -60,21 +65,29 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Haymimovement.org. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script -->
+  <script>
+    function setLanguage(lang) {
+      const heroText = document.getElementById('hero-text');
+      if (lang === 'am') {
+        heroText.innerHTML = `
+          <h1>እኛ ዓለምን እንቀየራለን።</h1>
+          <p>በማንኛውም ኢንዱስትሪ፣ ሴቶችን የሚያወርዱ መሰረታዊ እንቅስቃሴዎችን እንደመሰረት እንቀየራለን።</p>
+          <button class="cta-btn">ዛሬ ይቀላቀሉ</button>
+        `;
+      } else {
+        heroText.innerHTML = `
+          <h1>We’re changing the world.</h1>
+          <p>No matter the industry, we’re breaking down barriers that hold women back.</p>
+          <button class="cta-btn">JOIN TODAY</button>
+        `;
+      }
+    }
+  </script>
 </body>
 </html>
-<nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="pages.html">Pages</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-
