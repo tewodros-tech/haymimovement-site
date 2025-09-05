@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Hayimi Movement</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Hayimi Movement</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="donate-btn">DONATE</button>
+  </nav>
+
+  <!-- Gallery Content -->
+  <main class="page-content">
+    <h1>Gallery</h1>
+    <div class="gallery-grid">
+      <img src="images/event1.jpg" alt="Community Event" />
+      <img src="images/workshop.jpg" alt="Youth Workshop" />
+      <img src="images/clinic.jpg" alt="Health Outreach" />
+      <img src="images/treeplanting.jpg" alt="Environmental Program" />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hayimi Movement. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
