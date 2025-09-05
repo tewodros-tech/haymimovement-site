@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Carousel initialization
+  // Optional: Carousel logic placeholder
   const slides = document.querySelectorAll(".carousel-image");
   let currentSlide = 0;
 
@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (slides.length > 0) {
-    rotateSlides(); // Show first slide immediately
-    setInterval(rotateSlides, 4000); // Rotate every 4 seconds
+    rotateSlides();
+    setInterval(rotateSlides, 4000);
   }
 });
+
