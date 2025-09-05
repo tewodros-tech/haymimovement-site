@@ -205,3 +205,39 @@ footer {
     transform: translateY(-100vh) translateX(100vw);
   }
 }
+/* Image Slider Styles */
+.image-slider {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+  height: 120px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 8); /* 4 images x 2 for loop */
+  animation: scroll 30s linear infinite;
+}
+
+.slide-img {
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Slide Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
