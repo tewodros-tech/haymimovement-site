@@ -1,31 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Donation type toggle
-  const buttons = document.querySelectorAll(".donation-type");
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      buttons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
+  const donationButtons = document.querySelectorAll(".donation-type");
+
+  if (donationButtons.length > 0) {
+    donationButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        donationButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+      });
     });
-  });
+  }
 
   // Carousel initialization
-  let currentSlide = 0;
   const slides = document.querySelectorAll(".carousel-image");
+  let currentSlide = 0;
 
   function rotateSlides() {
     slides.forEach((slide, index) => {
-      slide.classList.remove("active");
-      if (index === currentSlide) {
-        slide.classList.add("active");
-      }
+      slide.classList.toggle("active", index === currentSlide);
     });
     currentSlide = (currentSlide + 1) % slides.length;
   }
 
   if (slides.length > 0) {
     rotateSlides(); // Show first slide immediately
-    setInterval(rotateSlides, 4000);
+    setInterval(rotateSlides, 4000); // Rotate every 4 seconds
   }
 });
-
-
