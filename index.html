@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haymi Movement</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">Haymi Movement</div>
@@ -9,7 +18,7 @@
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="donate-btn">DONATE</button>
+    <button class="donate-btn" aria-label="Donate Button">DONATE</button>
   </nav>
 
   <!-- Hero Section -->
@@ -26,34 +35,36 @@
   </header>
 
   <!-- Mission & Donation Section -->
-  <section class="mission" id="donate">
-    <h2>Pandemic toll on women who work</h2>
+  <section class="mission fade-in" id="donate">
+    <h2>Pandemic Toll on Women Who Work</h2>
     <p>20 million more women may never return to work.</p>
-    <p id="mission-text">Haymimovement.org is ready to keep girls learning during and after the crisis.</p>
+    <p id="mission-text">HaymiMovement.org is ready to keep girls learning during and after the crisis.</p>
     <div class="donation-options">
-      <button class="donation-type active">ONE TIME</button>
-      <button class="donation-type">MONTHLY</button>
+      <button class="donation-type active" aria-label="One-time donation">ONE TIME</button>
+      <button class="donation-type" aria-label="Monthly donation">MONTHLY</button>
     </div>
-    <input type="text" placeholder="$10" class="donation-amount" />
-    <button class="continue-btn">CONTINUE</button>
+    <label for="donation-amount" class="visually-hidden">Donation Amount</label>
+    <input type="text" id="donation-amount" placeholder="$10" class="donation-amount" />
+    <button class="continue-btn" aria-label="Continue to payment">CONTINUE</button>
   </section>
 
   <!-- Gallery Section -->
-  <section class="gallery">
+  <section class="gallery fade-in">
     <h2>Gallery</h2>
     <div class="gallery-grid">
       <img src="images/photo1.jpg" alt="Event 1" />
       <img src="images/photo2.jpg" alt="Workshop" />
-      <img src="images/photo3.jpg" alt="Community" />
+      <img src="images/photo3.jpg" alt="Community gathering" />
     </div>
   </section>
 
   <!-- Newsletter Signup -->
-  <section class="newsletter">
+  <section class="newsletter fade-in">
     <h2>Stay Connected</h2>
     <p>Subscribe to our newsletter for updates and stories.</p>
-    <input type="email" placeholder="Your email" />
-    <button class="subscribe-btn">Subscribe</button>
+    <label for="email" class="visually-hidden">Email Address</label>
+    <input type="email" id="email" placeholder="Your email" />
+    <button class="subscribe-btn" aria-label="Subscribe to newsletter">Subscribe</button>
   </section>
 
   <!-- Footer -->
@@ -65,7 +76,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-<section class="mission fade-in">...</section>
-<section class="gallery fade-in">...</section>
-
-
