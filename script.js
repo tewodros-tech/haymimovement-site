@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Donation type toggle
   const buttons = document.querySelectorAll(".donation-type");
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -6,8 +7,28 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("active");
     });
   });
+
+  // Carousel initialization
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".carousel-image");
+
+  function rotateSlides() {
+    slides.forEach((slide, index) => {
+      slide.classList.remove("active");
+      if (index === currentSlide) {
+        slide.classList.add("active");
+      }
+    });
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  if (slides.length > 0) {
+    rotateSlides(); // Show first slide immediately
+    setInterval(rotateSlides, 4000);
+  }
 });
 
+// Language toggle function
 function setLanguage(lang) {
   const content = {
     en: {
@@ -22,22 +43,6 @@ function setLanguage(lang) {
     }
   };
 
-  document.querySelector(".hero-text h1").textContent = content[lang].headline;
-  document.querySelector(".hero-text p").textContent = content[lang].subtext;
-  document.querySelector(".donation-form p:nth-of-type(2)").textContent = content[lang].mission;
-}
-let currentSlide = 0;
-const slides = document.querySelectorAll(".carousel-image");
+  const selected = content[lang] || content.en;
 
-function rotateSlides() {
-  slides.forEach((slide, index) => {
-    slide.classList.remove("active");
-    if (index === currentSlide) {
-      slide.classList.add("active");
-    }
-  });
-  currentSlide = (currentSlide + 1) % slides.length;
-}
-
-setInterval(rotateSlides, 4000);
-
+  const hero
