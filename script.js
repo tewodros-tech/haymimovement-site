@@ -26,3 +26,18 @@ function setLanguage(lang) {
   document.querySelector(".hero-text p").textContent = content[lang].subtext;
   document.querySelector(".donation-form p:nth-of-type(2)").textContent = content[lang].mission;
 }
+let currentSlide = 0;
+const slides = document.querySelectorAll(".carousel-image");
+
+function rotateSlides() {
+  slides.forEach((slide, index) => {
+    slide.classList.remove("active");
+    if (index === currentSlide) {
+      slide.classList.add("active");
+    }
+  });
+  currentSlide = (currentSlide + 1) % slides.length;
+}
+
+setInterval(rotateSlides, 4000);
+
