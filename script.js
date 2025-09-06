@@ -11,7 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Optional: Carousel logic placeholder
+  // Mobile menu toggle
+  const hamburger = document.getElementById("hamburger");
+  const navMobile = document.getElementById("nav-mobile");
+  const overlay = document.getElementById("menu-overlay");
+
+  function toggleMenu() {
+    hamburger.classList.toggle("active");
+    navMobile.classList.toggle("show");
+    overlay.classList.toggle("show");
+  }
+
+  hamburger.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
+
+  // Optional: Carousel placeholder
   const slides = document.querySelectorAll(".carousel-image");
   let currentSlide = 0;
 
@@ -27,4 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(rotateSlides, 4000);
   }
 });
-
