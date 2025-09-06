@@ -18,8 +18,26 @@
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <button class="donate-btn">DONATE</button>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div class="menu-overlay" id="menu-overlay"></div>
+  <ul class="nav-mobile" id="nav-mobile">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 
   <!-- Hero Section -->
   <header class="hero-banner">
@@ -29,14 +47,14 @@
       Your browser does not support the video tag.
     </video>
 
-    <!-- Image Slider (rotating from right to left) -->
+    <!-- Image Slider -->
     <div class="image-slider">
       <div class="slide-track">
         <img src="images/Children-One.jpg" alt="Slide 1" class="slide-img" />
         <img src="images/Logo.jpg" alt="Slide 2" class="slide-img" />
         <img src="images/Gofa.jpg" alt="Slide 3" class="slide-img" />
         <img src="images/Childrens.jpg" alt="Slide 4" class="slide-img" />
-        <!-- Repeat for seamless loop -->
+        <!-- repeat -->
         <img src="images/Children-One.jpg" alt="Slide 1" class="slide-img" />
         <img src="images/Logo.jpg" alt="Slide 2" class="slide-img" />
         <img src="images/Gofa.jpg" alt="Slide 3" class="slide-img" />
@@ -48,30 +66,4 @@
     <div class="hero-overlay">
       <h1>Empowering Communities</h1>
       <p>Join us in creating lasting change.</p>
-      <a href="#donate" class="cta-btn">Donate Now</a>
-    </div>
-  </header>
-
-  <!-- Mission & Donation Section -->
-  <section class="mission fade-in" id="donate">
-    <h2>Pandemic Toll on Women Who Work</h2>
-    <p>20 million more women may never return to work.</p>
-    <p>HayimiMovement.org is ready to keep girls learning during and after the crisis.</p>
-    <div class="donation-card">
-      <div class="donation-options">
-        <button class="donation-type active">ONE TIME</button>
-        <button class="donation-type">MONTHLY</button>
-      </div>
-      <input type="text" placeholder="$10" class="donation-amount" />
-      <button class="continue-btn">CONTINUE</button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Hayimi Movement. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+      <a href="#donate" class="cta-btn
