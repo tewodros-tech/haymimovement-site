@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic page setup -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hayimi Movement</title>
-
-  <!-- Fonts for branding and readability -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet" />
-
-  <!-- Modular CSS files -->
-  <link rel="stylesheet" href="css/base.css" />           <!-- Global styles -->
-  <link rel="stylesheet" href="css/navbar.css" />         <!-- Navigation bar -->
-  <link rel="stylesheet" href="css/hero.css" />           <!-- Hero section -->
-  <link rel="stylesheet" href="css/footer.css" />         <!-- Footer layout -->
-  <link rel="stylesheet" href="css/responsive.css" />     <!-- Mobile responsiveness -->
-  <link rel="stylesheet" href="css/animations.css" />     <!-- Optional animations -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hayimi Movement – About</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Header with logo and navigation -->
+  <!-- 🔝 Navigation -->
   <header class="navbar">
-    <div class="logo">
-      <!-- Logo image (use transparent PNG or SVG for best results) -->
-      <a href="index.html"><img src="images/Logo.png" alt="Hayimi Logo" /></a>
-    </div>
-
-    <!-- Hamburger button for mobile toggle -->
-    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
-
-    <!-- Navigation menu -->
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
+    <div class="logo">Hayimi Movement</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="donation.html" class="donate-btn">Donate Today</a></li>
+        <li><a href="donate.html" class="donate-btn">DONATE</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero section with image and call-to-action -->
-  <section class="hero">
-    <img src="images/Image1.jpg" alt="Pride in the Park" />
+  <!-- 📖 About Section -->
+  <main class="content-section">
+    <h1>About Hayimi Movement</h1>
+    <p>Spreading love and hope to families in need—through compassion, resilience, and community-driven action.</p>
 
-    <!-- Text overlay with animation class -->
-    <div class="hero-text fade-in-up">
-      <h1>Pride in the Park</h1>
-      <a href="events.html" class="learn-btn">Learn More</a>
-    </div>
-  </section>
+    <h2>Our Mission</h2>
+    <p>Hayimi Movement is a grassroots initiative rooted in Ethiopia, committed to empowering communities through education, health, and humanitarian support.</p>
 
-  <!-- Footer with copyright -->
+    <h2>What We Do</h2>
+    <ul class="mission-list">
+      <li>💛 Supporting Displaced People</li>
+      <li>📚 Promoting Education Access</li>
+      <li>🩺 Facilitating Health Outreach</li>
+      <li>🌍 Building Community Resilience</li>
+    </ul>
+  </main>
+
+  <!-- 📞 Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Hayimi Movement. All rights reserved.</p>
+    <p>© 2025 Hayimi Movement. All rights reserved.</p>
   </footer>
-
-  <!-- JavaScript for menu toggle and future interactivity -->
-  <script src="js/main.js"></script>
 </body>
 </html>
